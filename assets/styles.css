@@ -4,6 +4,8 @@ html {
 
 .container{
     background-color: #C8B190;
+    padding: 5px;
+    border-radius: 5px;
     }
     
     .title{
