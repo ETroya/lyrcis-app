@@ -3,6 +3,7 @@ html {
 }
 
 .container{
+    background-color: #C8B190;
     }
     
     .title{
@@ -10,9 +11,25 @@ html {
     }
     
     #searchBar{
-    background: #F8F8F7
+    background: #F8F8F7;
+    border-radius: 15px;
+    border-color: B58B79;
+    border-style: dotted;
     }
     #searchBtn{
-    background: #D56244;
-    border: 12px solid black;
-    }
+        background-color: #D56244; /* Red */
+        border: none;
+        color: #F8F8F7;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 15px;
+      }
+
+      #searchBtn:hover {
+        font-size: 20px;
+        background-color: #e4846c;
+        transition: all .3s ease-in-out;
+      }
