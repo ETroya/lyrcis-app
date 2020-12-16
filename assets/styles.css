@@ -12,9 +12,9 @@ html {
     
     #searchBar{
     background: #F8F8F7;
-    border-radius: 15px;
-    border-color: B58B79;
-    border-style: dotted;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid #B58B79;
     }
     #searchBtn{
         background-color: #D56244; /* Red */
@@ -31,5 +31,5 @@ html {
       #searchBtn:hover {
         font-size: 20px;
         background-color: #e4846c;
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
       }
