@@ -1,25 +1,88 @@
+/* Back-Background */
+
 html {
     background-color: #413733;
 }
 
-.container{
+
+/* The tan box that this is going to take up */
+
+.container {
+    background-image: linear-gradient(#C8B190, #B58B79);
     background-color: #C8B190;
     padding: 5px;
     border-radius: 5px;
-    }
-    
-    .title{
-    
-    }
-    
-    #searchBar{
+    border: 2px solid #B58B79;
+}
+
+
+/* Fancy Shadow on our text */
+
+#header {
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 1px 4px 5px #413733, 1px 5px 55px #B58B79;
+    margin-top: auto;
+    padding: 5px;
+    animation: Versatile;
+    animation-duration: 4s;
+}
+
+
+/* Search Bar and Button  */
+
+#searchBar {
+    text-align: left;
     background: #F8F8F7;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
+    width: 1242px;
+}
+
+#searchBtn {
+    background-color: #D56244;
+    /* Red */
+    border: none;
+    color: #F8F8F7;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    float: right;
+    position: absolute;
+    margin-right: 12px;
+}
+
+#searchBtn:hover {
+    font-size: 17px;
+    background-color: #e4846c;
+    transition: all .7s ease-in-out;
+}
+
+.checked {
+    color: orange;
+}
+
+@keyframes Versatile {
+    0% {
+        top: 0px;
     }
-    #searchBtn{
-        background-color: #D56244; /* Red */
+    25% {
+        top: 5;
+    }
+    50% {
+        top: 15px;
+    }
+    100% {
+        top: 0px;
+    }
+    <<<<<<< Updated upstream #searchBtn {
+        background-color: #D56244;
+        /* Red */
         border: none;
         color: #F8F8F7;
         padding: 10px 20px;
@@ -28,10 +91,13 @@ html {
         display: inline-block;
         font-size: 16px;
         border-radius: 15px;
-      }
-
-      #searchBtn:hover {
+    }
+    #searchBtn:hover {
         font-size: 20px;
         background-color: #e4846c;
         transition: all .2s ease-in-out;
-      }
+    }
+    =======
+}
+
+>>>>>>>Stashed changes
