@@ -54,9 +54,31 @@
             <body>
             <div class="container">
               <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-              </h2>
-            </div>
+                <button class="tablink" onclick="openPage('albumCover', this, 'orange')">Album Cover</button>
+
+                <button class="tablink" onclick="openPage('Bio', this, 'green')" id="defaultOpen">Bio</button>
+                <button class="tablink" onclick="openPage('Lyrics', this, 'blue')">Lyrics</button>
+                <button class="tablink" onclick="openPage('Lanuage Translator', this, 'orange')">Lanuage Translator</button>
+                <div id="Album Cover" class="tabcontent">
+                  <h3>Filler</h3>
+                  <p>Album Cover Filler </p>
+                </div>
+                
+                <div id="Bio" class="tabcontent">
+                  <h3>Whats up </h3>
+                  <p>im just hanging out </p> 
+                </div>
+                
+                <div id="Lyrics" class="tabcontent">
+                  <h3>Lyrics</h3>
+                  <p></p>
+                </div>
+                
+                <div id="Lanuage Translator" class="tabcontent">
+                  <h3>Spanish</h3>
+                  <p>Hola</p>
+                </div>
+                
           </section>
         </body>
         
