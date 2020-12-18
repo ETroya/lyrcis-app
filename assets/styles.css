@@ -26,10 +26,6 @@ html {
     padding: 5px;
 }
 
-.checked {
-    color: orange;
-}
-
 
 /* Tab formatting. WORK, DAMN YOU! */
 
@@ -54,7 +50,7 @@ html {
 }
 
 
-/* search button */
+/* Search button */
 
 #searchBtn {
     background-color: #D56244;
