@@ -38,5 +38,13 @@ html {
       .checked {
         color: orange;
       }
+<<<<<<< HEAD
 
       
+=======
+      #columnEl {
+        background-color: red;
+        padding: 25px;
+        border-radius: 25px;
+      }
+>>>>>>> 191e03ff5ba00f6b4e2529827b221797b7cff2eb

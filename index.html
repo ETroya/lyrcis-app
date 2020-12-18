@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VersEtile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="assets/styles.css">
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
     <!-- Main body for content -->
   <section class="section">
     <main class="container">
@@ -57,26 +59,53 @@
                 <button class="tablink" onclick="openPage('albumCover', this, 'orange')">Album Cover</button>
 
                 <button class="tablink" onclick="openPage('Bio', this, 'green')" id="defaultOpen">Bio</button>
-                <button class="tablink" onclick="openPage('Lyrics', this, 'blue')">Lyrics</button>
-                <button class="tablink" onclick="openPage('Lanuage Translator', this, 'orange')">Lanuage Translator</button>
-                <div id="Album Cover" class="tabcontent">
-                  <h3>Filler</h3>
-                  <p>Album Cover Filler </p>
+                <button class="tablink" onclick="openPage('lyrics', this, 'blue')">Lyrics</button>
+                <button class="tablink" onclick="openPage('lanuageTranslator', this, 'orange')">Lanuage Translator</button>
+                <div id="albumCover" class="tabcontent">
+                  <div class="column">
+                    <a class="box example2">
+                        <p class="title is-2">Another title</p>
+                        <p class="subtitle is-4 is-marginless">another subtitle</p>
+                    </a>
+                  </div>
                 </div>
                 
                 <div id="Bio" class="tabcontent">
-                  <h3>Whats up </h3>
-                  <p>im just hanging out </p> 
+                  <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <a class="box example1">
+                                <p class="title is-2">This is a title.</p>
+                                <p class="subtitle is-4 is-marginless">this is a subtitle</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div id="Lyrics" class="tabcontent">
+                <div id="lyrics" class="tabcontent">
                   <h3>Lyrics</h3>
-                  <p></p>
+                  <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <a class="box example1">
+                                <p class="title is-2">This is a title.</p>
+                                <p class="subtitle is-4 is-marginless">this is a subtitle</p>
+                            </a>
+                        </div>
+                      </div>
+                    </div> 
                 </div>
-                
-                <div id="Lanuage Translator" class="tabcontent">
+                <div id="lanuageTranslator" class="tabcontent">
                   <h3>Spanish</h3>
-                  <p>Hola</p>
+                  <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <a class="box example1">
+                                <p class="title is-2">This is a title.</p>
+                                <p class="subtitle is-4 is-marginless">this is a subtitle</p>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 
           </section>
@@ -86,20 +115,27 @@
       </p>
       
     </main>
-  </section>
- 
-  <script src="./assets/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>VersEtile</strong> by <a href="https://etroya.github.io/Bootstrap.About-Me/">Edwin Troya</a>.
-        
-        
-      </p>
-    </div>
-  </footer>
+  
+
+    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>VersEtile</strong> by <a href="https://etroya.github.io/Bootstrap.About-Me/">Edwin Troya</a>.
+      
+      
+    </p>
+  </div>
+</footer>
