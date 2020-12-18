@@ -35,3 +35,6 @@ html {
         background-color: #e4846c;
         transition: all .2s ease-in-out;
       }
+      .checked {
+        color: orange;
+      }
