@@ -20,8 +20,8 @@ html {
 
 #header {
     font-weight: bold;
-    font-size: 45px;
-    text-shadow: 1px 4px 5px #413733, 1px 5px 55px #B58B79;
+    font-size: 64px;
+    text-shadow: 1px 3px 3px #413733;
     margin-top: auto;
     padding: 5px;
 }
@@ -35,6 +35,7 @@ html {
 
 #tabs {
     color: #413733;
+    text-align: center;
 }
 
 
@@ -46,6 +47,9 @@ html {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     width: 1242px;
 }
 
