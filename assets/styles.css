@@ -24,8 +24,17 @@ html {
     text-shadow: 1px 4px 5px #413733, 1px 5px 55px #B58B79;
     margin-top: auto;
     padding: 5px;
-    animation: Versatile;
-    animation-duration: 4s;
+}
+
+.checked {
+    color: orange;
+}
+
+
+/* Tab formatting. WORK, DAMN YOU! */
+
+#tabs {
+    color: #413733;
 }
 
 
@@ -39,6 +48,9 @@ html {
     border: 2px solid #B58B79;
     width: 1242px;
 }
+
+
+/* search button */
 
 #searchBtn {
     background-color: #D56244;
@@ -62,42 +74,3 @@ html {
     background-color: #e4846c;
     transition: all .7s ease-in-out;
 }
-
-.checked {
-    color: orange;
-}
-
-@keyframes Versatile {
-    0% {
-        top: 0px;
-    }
-    25% {
-        top: 5;
-    }
-    50% {
-        top: 15px;
-    }
-    100% {
-        top: 0px;
-    }
-    <<<<<<< Updated upstream #searchBtn {
-        background-color: #D56244;
-        /* Red */
-        border: none;
-        color: #F8F8F7;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 15px;
-    }
-    #searchBtn:hover {
-        font-size: 20px;
-        background-color: #e4846c;
-        transition: all .2s ease-in-out;
-    }
-    =======
-}
-
->>>>>>>Stashed changes
