@@ -38,7 +38,7 @@ html {
 
 /* Search Bar and Button  */
 
-#searchBar {
+.input {
     text-align: left;
     background: #F8F8F7;
     border-top-left-radius: 15px;
@@ -53,7 +53,7 @@ html {
 
 /* Search button */
 
-#searchBtn {
+button {
     background-color: #D56244;
     /* Red */
     border: none;
@@ -70,7 +70,7 @@ html {
     margin-right: 12px;
 }
 
-#searchBtn:hover {
+.button:hover {
     font-size: 17px;
     background-color: #e4846c;
     transition: all .7s ease-in-out;
