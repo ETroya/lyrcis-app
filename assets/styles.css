@@ -19,7 +19,8 @@ html {
 /* Fancy Shadow on our text */
 
 #header {
-    font-weight: bold;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: auto;
     font-size: 64px;
     text-shadow: 1px 3px 3px #413733;
     margin-top: auto;
@@ -46,7 +47,7 @@ html {
     border-right: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 1242px;
+    width: auto;
 }
 
 
