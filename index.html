@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VersEtile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="assets/styles.css">
-    
-  </head>
-  <body>
-    <!-- Main body for content -->
-  <section class="section">
-    <main class="container">
-      <input id="searchBar" class="input" type="text" placeholder="Search">
-      <button class= "button is-success is-large is-rounded">Search</button>
-      <h1 class="title has-text-centered">
-        VersEtile
-      </h1>
-      <main></main>
-      <!-- Selection of the Album Cover, Bio, Lyrics, Translator-->
-      <p class="subtitle">
-        <div class="tabs is-toggle is-toggle-rounded">
-          <ul>
-            <li class="is-active">
-              <a>
-                <span class="icon is-large"><i class="fas fa-image"></i></span>
-                <span>Album Cover</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="icon is-large"><i class="fas fa-music"></i></span>
-                <span>Bio</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="icon is-large"><i class="fas fa-film"></i></span>
-                <span>Lyrics</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="icon is-large"><i class="fas fa-file-alt"></i></span>
-                <span>Translator</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- adding columns to site: max 4 -->
-        
-        
 
-      </p>
-      
-    </main>
-  </section>
- 
-  <script src="./assets/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+</head>
+
+<body>
+    <!-- Main body for content -->
+    <section class="section">
+        <main class="container">
+            <input id="searchBar" class="input" type="text" placeholder="Search">
+            <button class="button is-success is-large is-rounded">Search</button>
+            <h1 class="title has-text-centered">
+                VersEtile
+            </h1>
+            <main></main>
+            <!-- Selection of the Album Cover, Bio, Lyrics, Translator-->
+            <p class="subtitle">
+            <div class="tabs is-toggle is-toggle-rounded">
+                <ul>
+                    <li class="is-active">
+                        <a>
+                            <span class="icon is-large"><i class="fas fa-image"></i></span>
+                            <span>Album Cover</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon is-large"><i class="fas fa-music"></i></span>
+                            <span>Bio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon is-large"><i class="fas fa-film"></i></span>
+                            <span>Lyrics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="icon is-large"><i class="fas fa-file-alt"></i></span>
+                            <span>Translator</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- adding columns to site: max 4 -->
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-one-quarter">
+                    <code>is-one-quarter</code>
+                </div>                 
+                <div class="column is-one-quarter">
+                    <code>is-one-quarter</code>
+                </div>
+                <div class="column is-one-quarter">
+                    <code>is-one-quarter</code>
+                </div>
+                <div class="column is-one-quarter">
+                    <code>is-one-quarter</code>
+                </div>
+            </div>
+
+
+
+
+        </main>
+    </section>
+
+    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
