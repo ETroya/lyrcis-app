@@ -1,7 +1,4 @@
 # lyrcis-app
-Get your favorite songs, rate them, and have the lyrics displayed live, and in several languages!
-
-=========
 Features:
 ==
 =========
@@ -37,3 +34,7 @@ Amar Mann
 Ty Diezhandino
 
 ====================
+=======
+Get your favorite songs
+
+Making a quick change. 
