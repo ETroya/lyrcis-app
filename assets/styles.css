@@ -1,18 +1,123 @@
+/* Back-Background */
+
 html {
     background-color: #413733;
 }
 
-.container{
-    }
-    
-    .title{
-    
-    }
-    
-    #searchBar{
-    background: #F8F8F7
+
+/* The tan box that this is going to take up */
+
+.container {
+    background-image: linear-gradient(#C8B190, #B58B79);
+    background-color: #C8B190;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #B58B79;
+}
+
+
+/* Fancy Shadow on our text */
+
+#header {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: auto;
+    font-size: 64px;
+    text-shadow: 1px 3px 3px #413733;
+    margin-top: auto;
+    padding: 5px;
+}
+
+
+/* Tab formatting. WORK, DAMN YOU! */
+
+#tabsStart {
+    color: #413733;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#tabs {
+    color: #413733;
+    text-align: center;
+}
+
+#tabsEnd {
+    color: #413733;
+    text-align: center;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+/* Search Bar and Button  */
+
+.input {
+    text-align: left;
+    background: #F8F8F7;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid #B58B79;
+/* <<<<<<< HEAD */
     }
     #searchBtn{
-    background: #D56244;
-    border: 12px solid black;
-    }
+        background-color: #D56244; /* Red */
+        border: none;
+        color: #F8F8F7;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 15px;
+      }
+
+      #searchBtn:hover {
+        font-size: 20px;
+        background-color: #e4846c;
+        transition: all .2s ease-in-out;
+      }
+      .checked {
+        color: orange;
+      }
+/* <<<<<<< HEAD */
+
+      
+/* ======= */
+      #columnEl {
+        background-color: red;
+        padding: 25px;
+        border-radius: 25px;
+      }
+
+
+/* Search button */
+
+.button {
+    background-color: #D56244;
+    /* Red */
+    border: none;
+    color: #F8F8F7;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    float: right;
+    position: absolute;
+    margin-right: 12px;
+}
+
+.button:hover {
+    font-size: 17px;
+    background-color: #e4846c;
+    transition: all .7s ease-in-out;
+}
+/* >>>>>>> a69665bf65a0013c7f48da7efa59435abc9329b6 */
+
