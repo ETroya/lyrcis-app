@@ -53,7 +53,7 @@ html {
 
 /* Search button */
 
-button {
+.button {
     background-color: #D56244;
     /* Red */
     border: none;
@@ -63,8 +63,8 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     float: right;
     position: absolute;
     margin-right: 12px;
