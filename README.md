@@ -32,7 +32,7 @@ Created as equals, by:
 Ankush Challa 
 Edwin Troya
 Syrus Sadvandi
-Carlos Fuente
+Carlos Fuerte
 Amar Mann 
 Ty Diezhandino
 
