@@ -13,4 +13,8 @@ function openPage(pageName,elmnt,color) {
   }
   document.getElementById("defaultOpen").click();
 
-   
+
+  function openPage(pageName,element,color){
+    var i, selectStart,tablinks;
+    
+  }
