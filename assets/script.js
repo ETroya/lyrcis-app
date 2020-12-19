@@ -1,11 +1,11 @@
 var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
 
-function translate() {
+function translate(lyrics) {
   $.ajax({
-    "url": "https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it",
+    "url": `https://api.mymemory.translated.net/get?q=${lyrics}!&langpair=en|it`,
     "method": "GET",
   }).done(function (response) {
-    console.log(response);
+    console.log(response.responseData.translatedText);
   });
 }
 
@@ -45,7 +45,9 @@ function getLyrics() {
       url: songURL,
       type: "GET"
     }).then(function (response) {
-      console.log(JSON.parse(response).message.body.lyrics.lyrics_body);
+      var lyrics = JSON.parse(response).message.body.lyrics.lyrics_body.substring(0,300);
+      translate(lyrics);
+
     })
   })
 }
@@ -69,5 +71,3 @@ $("#searchBtn").on("click", function (event) {
   event.preventDefault();
   getLyrics();
 });
-
-translate();
