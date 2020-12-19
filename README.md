@@ -1,4 +1,11 @@
 # lyrcis-app
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+Get your favorite songs, rate them, and have the lyrics displayed live, and in several languages!
+
+=========
+>>>>>>> 488e81df10e05bbef55720aa48a4c1572e095e82
 Features:
 ==
 =========
@@ -38,3 +45,7 @@ Ty Diezhandino
 Get your favorite songs
 
 Making a quick change. 
+<<<<<<< HEAD
+=======
+>>>>>>> ce86390b36450089860cf11a2a5d312adaa534b5
+>>>>>>> 488e81df10e05bbef55720aa48a4c1572e095e82
