@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VersEtile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/styles.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles.css">
 
 </head>
 
@@ -21,6 +25,15 @@
 
             <label for="search-artist" class="form-label">Artist name</label>
             <input type="text" class="form-control" id="search-artist" aria-label="Search" placeholder="Search">
+
+            <label for="search-lang" class="form-label">Language (optional) (partial translation)</label>
+            <select class="form-select" id="search-lang" aria-label="Default select example">
+                <option selected>Language</option>
+                <option value="1">Italian</option>
+                <option value="2">Spanish</option>
+                <option value="3">French</option>
+            </select>
+
             <button id="searchBtn" class="button is-large is-rounded">Search</button>
 
             </div>
@@ -143,17 +156,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
             integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
             crossorigin="anonymous"></script>
-        <script src="./assets/script.js"></script>
+        <script src="./main.js"></script>
         <html lang="en">
-
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-                crossorigin="anonymous">
-            <title>Document</title>
-        </head>
 
         <body>
 

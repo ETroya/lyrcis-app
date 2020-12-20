@@ -1,12 +1,28 @@
 var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
 
 function translate(lyrics) {
+  var de = "ankushchalla@gmail.com"
+  var inputLang = $("#search-lang option:selected").text();
+  if (inputLang === "Italian") {
+    var lang = "it";
+  }
+  else if (inputLang === "Spanish") {
+    var lang = "es";
+  }
+  else if (inputLang === "French") {
+    var lang = "fr";
+  }
+  else {
+    return;
+  }
+  var url = `https://api.mymemory.translated.net/get?q=${lyrics}&langpair=en|${lang}&de=${de}`
   $.ajax({
-    "url": `https://api.mymemory.translated.net/get?q=${lyrics}!&langpair=en|it`,
-    "method": "GET",
-  }).done(function (response) {
-    console.log(response.responseData.translatedText);
-  });
+    url: url, 
+    method: "GET"
+  }).then(function(response) {
+    var translation = response.responseData.translatedText;
+    console.log("Translation:", translation);
+  })
 }
 
 // Gets track ID for song + artist inputted by user and uses that 
@@ -24,8 +40,8 @@ function getLyrics() {
   }).then(function (response) {
     // Call can return an empty error, check for that. 
     try {
-      console.log(JSON.parse(response));
       var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
+      var artistID = JSON.parse(response).message.body.track_list[0].track.artist_id;
     }
     catch (error) {
       if (error instanceof TypeError) {
@@ -45,9 +61,26 @@ function getLyrics() {
       url: songURL,
       type: "GET"
     }).then(function (response) {
-      var lyrics = JSON.parse(response).message.body.lyrics.lyrics_body.substring(0,300);
+      var fullLyrics = JSON.parse(response).message.body.lyrics.lyrics_body;
+      console.log("Lyrics:", fullLyrics);
+      var lyrics = fullLyrics.substring(0,300);
       translate(lyrics);
+    })
 
+    // Get related artists using artist ID. 
+    method = "artist.related.get?";
+    q = `artist_id=${artistID}`;
+    songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
+    $.ajax({
+      url: songURL,
+      method: "GET"
+    }).then(function(response) {
+      var artists = JSON.parse(response).message.body.artist_list;
+      var artistNames = [];
+      for (var i = 0; i < artists.length; i++) {
+        artistNames[i] = artists[i].artist.artist_name;
+      }
+      console.log("Related artists:", artistNames);
     })
   })
 }
