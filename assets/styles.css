@@ -61,7 +61,7 @@ html {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
-/* <<<<<<< HEAD */
+
     }
     #searchBtn{
         background-color: #D56244; /* Red */
@@ -83,10 +83,7 @@ html {
       .checked {
         color: orange;
       }
-/* <<<<<<< HEAD */
-
-      
-/* ======= */
+ 
       #columnEl {
         background-color: red;
         padding: 25px;
