@@ -64,17 +64,17 @@ $("#search").on("click", function (event) {
 		// })
 		function openPage(pageName,elmnt,color) {
 			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
+			tabcontent = document.getElementsByClassName("#tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 			  tabcontent[i].style.display = "none";
 			}
-			tablinks = document.getElementsByClassName("tablink");
+			tablinks = document.getElementsByClassName("#tablink");
 			for (i = 0; i < tablinks.length; i++) {
 			  tablinks[i].style.backgroundColor = "";
 			}
-			document.getElementById(pageName).style.display = "block";
+			document.getElementById(pageName).style.display = "#block";
 			elmnt.style.backgroundColor = color;
 		  }
-		  document.getElementById("defaultOpen").click();
+		  document.getElementById(".defaultOpen").click();
 	})
 });
