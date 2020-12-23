@@ -11,14 +11,12 @@ $("#search").on("click", function (event) {
 	var q = `q_track=${songName}&q_artist=${artist}`;
 	var songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
 
-
 	$.ajax({
 		url: songURL,
 		type: "GET"
 	}).then(function (response) {
 		// Call can return an empty error, check for that. 
 		try {
-			console.log(JSON.parse(response));
 			var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
 		}
 		catch (error) {
@@ -32,8 +30,7 @@ $("#search").on("click", function (event) {
 		}
 
 		method = "track.lyrics.get?";
-		// q = `track_id=${trackID}`;
-		q = `track_id=${track.track_id}`;
+		q = `track_id=${trackID}`;
 		songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
 
 		$.ajax({
@@ -42,19 +39,19 @@ $("#search").on("click", function (event) {
 		}).then(function (response) {
 			console.log(JSON.parse(response).message.body.lyrics.lyrics_body);
 		})
-		console.log(track.artist_id);
-		method = "album.get?"
-		q= `album_id=${track.album_id}`
-		songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
-		$.ajax({
-			url: songURL,
-			type: "GET"
-		}).then(function (response) {
+		// console.log(track.artist_id);
+		// method = "album.get?"
+		// q= `album_id=${track.album_id}`
+		// songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
+		// $.ajax({
+		// 	url: songURL,
+		// 	type: "GET"
+		// }).then(function (response) {
 			
-			console.log(JSON.parse((response)).message.body.album)
-			var mbid = (JSON.parse((response)).message.body.album.album_mbid)
-			console.log(mbid);
-		})
+		// 	console.log(JSON.parse((response)).message.body.album)
+		// 	var mbid = (JSON.parse((response)).message.body.album.album_mbid)
+		// 	console.log(mbid);
+		// })
 		
 		// songURL = `https://musicbrainz.org/ws/2/area/45f07934-675a-46d6-a577-6f8637a411b1?inc=aliases`;
 		// $.ajax({

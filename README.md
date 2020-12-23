@@ -1,5 +1,7 @@
 # lyrcis-app
 
+
+=======
 Get your favorite songs, rate them, and have the lyrics displayed live, and in several languages!
 
 =========
@@ -42,5 +44,9 @@ Ty Diezhandino
 Get your favorite songs
 
 Making a quick change. 
+<<<<<<< HEAD
+>>>>>>> d8c6ed34f62ad5c771cdbdbc206b982a17e7ea06
+=======
 
 
+>>>>>>> c50c71aff861501653145234171eaad883412e78
