@@ -1,6 +1,44 @@
 var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
 
+// Using Google translate.
 function translate(lyrics) {
+  var inputLang = $("#search-lang option:selected").text();
+  if (inputLang === "Italian") {
+    var lang = "it";
+  }
+  else if (inputLang === "Spanish") {
+    var lang = "es";
+  }
+  else if (inputLang === "French") {
+    var lang = "fr";
+  }
+  else {
+    return;
+  }
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://google-translate1.p.rapidapi.com/language/translate/v2",
+    "method": "POST",
+    "headers": {
+      "x-rapidapi-host": "google-translate1.p.rapidapi.com",
+      "x-rapidapi-key": "923b9036e4msh7d50620128936fep112714jsn6dbacd41c48e",
+      "accept-encoding": "application/gzip",
+      "content-type": "application/x-www-form-urlencoded"
+    },
+    "data": {
+      "source": "en",
+      "q": lyrics,
+      "target": `${inputLang}`
+    }
+  }
+  $.ajax(settings).done(function (response) {
+    console.log(response.translations[0].translatedText);
+  });
+}
+
+// Using MyMemory API.
+function translate1(lyrics) {
   var de = "ankushchalla@gmail.com"
   var inputLang = $("#search-lang option:selected").text();
   if (inputLang === "Italian") {
@@ -17,9 +55,9 @@ function translate(lyrics) {
   }
   var url = `https://api.mymemory.translated.net/get?q=${lyrics}&langpair=en|${lang}&de=${de}`
   $.ajax({
-    url: url, 
+    url: url,
     method: "GET"
-  }).then(function(response) {
+  }).then(function (response) {
     var translation = response.responseData.translatedText;
     console.log("Translation:", translation);
   })
@@ -63,25 +101,25 @@ function getLyrics() {
     }).then(function (response) {
       var fullLyrics = JSON.parse(response).message.body.lyrics.lyrics_body;
       console.log("Lyrics:", fullLyrics);
-      var lyrics = fullLyrics.substring(0,300);
+      var lyrics = fullLyrics.substring(0, 300);
       translate(lyrics);
     })
 
     // Get related artists using artist ID. 
-    method = "artist.related.get?";
-    q = `artist_id=${artistID}`;
-    songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
-    $.ajax({
-      url: songURL,
-      method: "GET"
-    }).then(function(response) {
-      var artists = JSON.parse(response).message.body.artist_list;
-      var artistNames = [];
-      for (var i = 0; i < artists.length; i++) {
-        artistNames[i] = artists[i].artist.artist_name;
-      }
-      console.log("Related artists:", artistNames);
-    })
+    // method = "artist.related.get?";
+    // q = `artist_id=${artistID}`;
+    // songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
+    // $.ajax({
+    //   url: songURL,
+    //   method: "GET"
+    // }).then(function (response) {
+    //   var artists = JSON.parse(response).message.body.artist_list;
+    //   var artistNames = [];
+    //   for (var i = 0; i < artists.length; i++) {
+    //     artistNames[i] = artists[i].artist.artist_name;
+    //   }
+    //   console.log("Related artists:", artistNames);
+    // })
   })
 }
 
