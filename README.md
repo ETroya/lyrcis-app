@@ -1,10 +1,20 @@
 # lyrcis-app
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
+>>>>>>> c50c71aff861501653145234171eaad883412e78
+=======
 
 =======
+>>>>>>> ef00faaae4529705cc8e1163d698914dc375f9f5
 Get your favorite songs, rate them, and have the lyrics displayed live, and in several languages!
 
 =========
+
 Features:
 ==
 =========
@@ -34,8 +44,13 @@ Created as equals, by:
 ==========
 Ankush Challa 
 Edwin Troya
+<<<<<<< HEAD
+Syrus Sadvandi
+Carlos Fuerte
+=======
 Syrus Sadvandi -- ccfe673d50e42db6f9e361f10c95b6b0
 Carlos Fuente
+>>>>>>> c50c71aff861501653145234171eaad883412e78
 Amar Mann 
 Ty Diezhandino
 
@@ -45,8 +60,14 @@ Get your favorite songs
 
 Making a quick change. 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
 >>>>>>> d8c6ed34f62ad5c771cdbdbc206b982a17e7ea06
 =======
 
+>>>>>>> ef00faaae4529705cc8e1163d698914dc375f9f5
 
 >>>>>>> c50c71aff861501653145234171eaad883412e78
