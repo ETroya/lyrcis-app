@@ -1,5 +1,5 @@
 # lyrcis-app
-<<<<<<< HEAD
+
 Get your favorite songs, rate them, and have the lyrics displayed live, and in several languages!
 
 =========
@@ -32,7 +32,7 @@ Created as equals, by:
 ==========
 Ankush Challa 
 Edwin Troya
-Syrus Sadvandi
+Syrus Sadvandi -- ccfe673d50e42db6f9e361f10c95b6b0
 Carlos Fuente
 Amar Mann 
 Ty Diezhandino
@@ -42,4 +42,5 @@ Ty Diezhandino
 Get your favorite songs
 
 Making a quick change. 
->>>>>>> ce86390b36450089860cf11a2a5d312adaa534b5
+
+
