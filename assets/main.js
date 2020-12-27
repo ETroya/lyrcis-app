@@ -1,5 +1,6 @@
 var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
 
+
 function translate(lyrics) {
   var de = "ankushchalla@gmail.com"
   var inputLang = $("#search-lang option:selected").text();
@@ -62,6 +63,9 @@ function getLyrics() {
       type: "GET"
     }).then(function (response) {
       var fullLyrics = JSON.parse(response).message.body.lyrics.lyrics_body;
+      // putting text in HTML
+      var textBox = document.querySelector(".example3");
+      textBox.textContent = fullLyrics
       console.log("Lyrics:", fullLyrics);
       var lyrics = fullLyrics.substring(0,300);
       translate(lyrics);
@@ -98,9 +102,9 @@ function openPage(pageName, elmnt, color) {
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
-document.getElementById("defaultOpen").click();
-
 $("#searchBtn").on("click", function (event) {
   event.preventDefault();
   getLyrics();
 });
+
+openPage()
