@@ -25,10 +25,10 @@
     <!-- Main body for content -->
     <section class="section">
         <main class="container">
-            <label for="search-song" class="form-label">Song name</label>
+            <label for="search-song" class="form-label">Song Name</label>
             <input type="text" class="form-control" id="search-song" aria-label="Search" placeholder="Search">
 
-            <label for="search-artist" class="form-label">Artist name</label>
+            <label for="search-artist" class="form-label">Artist Name</label>
             <input type="text" class="form-control" id="search-artist" aria-label="Search" placeholder="Search">
 
             <label for="search-lang" class="form-label">Language (optional) (partial translation)</label>
@@ -56,27 +56,27 @@
                     <section class="section">
                         <div class="tabs is-toggle is-toggle-rounded is-fullwidth">
                             <ul>
-                                <li class="is-active">
-                                    <a>
+                                <li>
+                                    <a class="tablink" onclick="openPage('albumCover', this, 'red')">
                                         <span id="selectStart" class="icon is-large"><i class="fa fa-camera" ></i></span>
                                         <span>Album Cover</span>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a>
+                                    <a class="tablink" onclick="openPage('RelatedArtist', this, 'green')">
                                         <span id="select" class="icon is-large" ><i class="fa fa-tree"></i></span>
                                         <span>Related Artist</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a>
+                                    <a id= "lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'blue')">
                                         <span id="select" class="icon is-large"><i class="fa fa-music"></i></span>
                                         <span>Lyrics</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a>
+                                    <a class="tablink" onclick="openPage('langTrans', this, 'orange')">
                                         <span id="selectEnd" class="icon is-large"><i class="fa fa-edit"></i></span>
                                         <span>Language Translator</span>
                                     </a>
@@ -87,33 +87,22 @@
                         <body>
                             <div class="container">
                                 <h2 class="subtitle">
-                                    <!-- connecting tothe other one -->
-                                    <button class="tablink" onclick="openPage('albumCover', this, 'orange')">Album
-                                        Cover</button>
-                                    <button class="tablink" onclick="openPage('Bio', this, 'green')"
-                                        id="defaultOpen">Bio</button>
-                                    <button class="tablink" onclick="openPage('Lyrics', this, 'blue')">Lyrics</button>
-                                    <button class="tablink" onclick="openPage('langTrans', this, 'orange')">Language
-                                        Translator</button>
 
-                                    <!--switching boxes  -->
+                                   <!--switching boxes  -->
                                     <div id="albumCover" class="tabcontent">
                                         <div class="column">
-                                            <a class="box example2">
+                                            <a class="box example1">
                                                 <p class="title is-2">Another title</p>
                                                 <p class="subtitle is-4 is-marginless">another subtitle</p>
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div id="Bio" class="tabcontent">
+                                    <div id="RelatedArtist" class="tabcontent">
                                         <div class="container">
                                             <div class="columns"></div>
                                             <div class="column">
-                                                <a class="box example1">
-                                                    <p class="title is-2">This is a title.</p>
-                                                    <p class="subtitle is-4 is-marginless">this is a subtitle</p>
-                                                </a>
+                                                <a class="box example2"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -122,10 +111,7 @@
                                         <div class="container">
                                             <!-- <div class="columns"> -->
                                             <div class="column">
-                                                <a class="box example2">
-                                                    <p class="title is-2">Another title</p>
-                                                    <p class="subtitle is-4 is-marginless">another subtitle</p>
-                                                </a>
+                                                <p class="box example3"></p>
                                             </div>
                                         </div>
                                     </div>
@@ -134,10 +120,7 @@
                                 <div class=" container">
                                     <!-- <div class="columns"> -->
                                     <div class="column">
-                                        <a class="box example2">
-                                            <p class="title is-2">Another title</p>
-                                            <p class="subtitle is-4 is-marginless">another subtitle</p>
-                                        </a>
+                                        <a class="box example4"></a>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +143,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
             integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
             crossorigin="anonymous"></script>
-        <script src="./main.js"></script>
+        <script src="./assets/main.js"></script>
         <html lang="en">
 
         <body>
