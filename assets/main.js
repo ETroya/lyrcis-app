@@ -23,6 +23,9 @@ function translate(lyrics) {
   }).then(function(response) {
     var translation = response.responseData.translatedText;
     console.log("Translation:", translation);
+    //putting HTML Text box
+    var textBox = document.querySelector(".example4");
+    textBox.textContent = translation
   })
 }
 
@@ -85,9 +88,12 @@ function getLyrics() {
         artistNames[i] = artists[i].artist.artist_name;
       }
       console.log("Related artists:", artistNames);
+      var textbox =document.querySelector(".example2")
+      textBox.textContent= artistNames
     })
   })
 }
+// When you click on one of these buttons the information will pop out. Album Cover, Related Artist, Lyrics, and Langauage Translator.
 
 function openPage(pageName, elmnt, color) {
   var i, tabcontent, tablinks;
@@ -106,5 +112,5 @@ $("#searchBtn").on("click", function (event) {
   event.preventDefault();
   getLyrics();
 });
-
+// Hides everything when yoou click the tabs
 openPage()
