@@ -1,6 +1,6 @@
 var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
 
-// Using Google translate.
+// Using Google translat API.
 function translate(lyrics) {
   var inputLang = $("#search-lang option:selected").text();
   if (inputLang === "Italian") {
