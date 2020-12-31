@@ -8,6 +8,17 @@ body {
     background-color: #413733;
 }
 
+.form-label {
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.form-control {
+    background-color: #f8f8f7;
+    border: 2px solid #B58B79;
+    padding-top: 2px;
+}
+
 
 /* The tan box that this is going to take up */
 

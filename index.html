@@ -22,15 +22,13 @@
     <!-- Main body for content -->
     <section class="section">
         <main class="container">
-            <label for="search-song" class="form-label">Song Name</label>
-            <input type="text" class="form-control" id="search-song" aria-label="Search" placeholder="Search">
+            <h1 id="header" class="title has-text-centered">VersEtile</h1>
+            <input type="text" class="form-control" id="search-song" aria-label="Search" placeholder="Song Name">
+            <input type="text" class="form-control" id="search-artist" aria-label="Search" placeholder="Artist Name">
 
-            <label for="search-artist" class="form-label">Artist Name</label>
-            <input type="text" class="form-control" id="search-artist" aria-label="Search" placeholder="Search">
-
-            <label for="search-lang" class="form-label">Language (optional) (partial translation)</label>
+            <label for="search-lang" class="form-label">Language (optional) (Partial Translation)</label>
             <select class="form-select" id="search-lang" aria-label="Default select example">
-                <option selected>Language</option>
+                <option selected value="0">No Translation (Default)</option>
                 <option value="1">Italian</option>
                 <option value="2">Spanish</option>
                 <option value="3">French</option>
@@ -44,7 +42,6 @@
 
 
             <!-- Header -->
-            <h1 id="header" class="title has-text-centered">VersEtile</h1>
             <main></main>
             <!-- Selection of the Album Cover, Bio, Lyrics, Translator-->
             <p class="subtitle">
