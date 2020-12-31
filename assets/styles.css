@@ -1,6 +1,10 @@
-/* Back-Background */
+/* Back-Background, includes section to prevent the awkward white box. */
 
 html {
+    background-color: #413733;
+}
+
+body {
     background-color: #413733;
 }
 
@@ -62,10 +66,42 @@ html {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
+<<<<<<< Updated upstream
     border-right: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     width: auto;
+=======
+}
+
+#searchBtn {
+    background-color: #D56244;
+    /* Red */
+    border: none;
+    color: #F8F8F7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+#searchBtn:hover {
+    font-size: 20px;
+    background-color: #e4846c;
+    transition: all .2s ease-in-out;
+}
+
+.checked {
+    color: orange;
+}
+
+#columnEl {
+    background-color: red;
+    padding: 25px;
+    border-radius: 25px;
+>>>>>>> Stashed changes
 }
 
 
@@ -92,4 +128,10 @@ html {
     font-size: 17px;
     background-color: #e4846c;
     transition: all .7s ease-in-out;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+#tabs {}
+>>>>>>> Stashed changes
