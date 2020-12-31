@@ -32,6 +32,9 @@ body {
 }
 
 
+/* Form text */
+
+
 /* Tab formatting. WORK, DAMN YOU! */
 
 #tabsStart {
@@ -66,12 +69,6 @@ body {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
-<<<<<<< Updated upstream
-    border-right: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    width: auto;
-=======
 }
 
 #searchBtn {
@@ -101,7 +98,6 @@ body {
     background-color: red;
     padding: 25px;
     border-radius: 25px;
->>>>>>> Stashed changes
 }
 
 
@@ -128,10 +124,6 @@ body {
     font-size: 17px;
     background-color: #e4846c;
     transition: all .7s ease-in-out;
-<<<<<<< Updated upstream
-}
-=======
 }
 
 #tabs {}
->>>>>>> Stashed changes
