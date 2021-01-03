@@ -16,7 +16,7 @@ body {
 .form-control {
     font-weight: bold;
     font-size: 20px;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #f8f8f7;
     border: 2px solid #B58B79;
     border-radius: 2px;
@@ -47,6 +47,27 @@ body {
     padding: 10px 25px;
     border-radius: 25px;
     border: 2px solid #B58B79;
+}
+
+
+/* Fancy form */
+
+.selectStart {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.select {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.selectEnd {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 
