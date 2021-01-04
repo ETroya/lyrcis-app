@@ -1,19 +1,75 @@
-/* Back-Background */
+/* Back-Background, includes section to prevent the awkward white box. */
 
 html {
     background-color: #413733;
 }
 
+body {
+    background-color: #413733;
+}
+
+.form-label {
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.form-control {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f8f7;
+    border: 2px solid #B58B79;
+    border-radius: 2px;
+    padding-top: 2px;
+    float: left;
+    width: 50%;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+.form-select {
+    border-radius: 2px;
+    background-color: #f8f8f7;
+    border: 2px solid #B58B79;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
 
 /* The tan box that this is going to take up */
 
-.container {
+#mainbox {
     background-image: linear-gradient(#C8B190, #B58B79);
     background-color: #C8B190;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px 25px;
+    border-radius: 25px;
     border: 2px solid #B58B79;
 }
+
+
+/* Fancy form */
+
+.selectStart {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.select {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.selectEnd {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
 
 /* Fancy Shadow on our text */
 
@@ -27,29 +83,29 @@ html {
 }
 
 
+/* Form text */
+
+
 /* Tab formatting. WORK, DAMN YOU! */
 
-#tabsStart {
+.box {
+    font-weight: bold;
+    font-size: 24px;
     color: #413733;
-    text-align: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    background-color: #C8B190;
+    border: 2px solid #B58B79;
+    padding: 2%;
 }
 
-#tabs {
-    color: #413733;
-    text-align: center;
+.column {
+    background-color: transparent;
 }
 
-#tabsEnd {
+.tablink {
+    font-weight: bold;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #413733;
     text-align: center;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
 }
 
 
@@ -61,62 +117,41 @@ html {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
-
-    }
-    #searchBtn{
-        background-color: #D56244; /* Red */
-        border: none;
-        color: #F8F8F7;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 15px;
-      }
-
-      #searchBtn:hover {
-        font-size: 20px;
-        background-color: #e4846c;
-        transition: all .2s ease-in-out;
-      }
-      .checked {
-        color: orange;
-      }
- 
-      #columnEl {
-        background-color: red;
-        padding: 25px;
-        border-radius: 25px;
-      }
+}
 
 
-/* Search button */
+/* Search btn */
 
-.button {
+#searchBtn {
+    margin-left: 18px;
     background-color: #D56244;
     /* Red */
     border: none;
     color: #F8F8F7;
+    /* White text */
     padding: 10px 20px;
-    text-align: right;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    float: right;
-    position: absolute;
-    margin-right: 12px;
+    border-radius: 15px;
 }
 
-.button:hover {
-    font-size: 17px;
+#searchBtn:hover {
+    padding: 10px 30px;
     background-color: #e4846c;
-    transition: all .7s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-/* #tabs {
-    
-} */
 
+/* Whatever this is. */
+
+.checked {
+    color: orange;
+}
+
+#columnEl {
+    background-color: red;
+    padding: 25px;
+    border-radius: 25px;
+}

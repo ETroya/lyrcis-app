@@ -91,6 +91,8 @@ function getLyrics() {
         artistNames.push(artists[i].artist.artist_name);
       }
       console.log("Related artists:", artistNames);
+      var textBox =document.querySelector(".example2")
+      textBox.textContent= artistNames
 	})
 
 	method = "album.get?";
