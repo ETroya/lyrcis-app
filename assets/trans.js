@@ -24,8 +24,6 @@ function translate(lyrics) {
     method: "GET"
   }).then(function(response) {
     var translation = response.responseData.translatedText;
-    console.log("Translation:", translation);
-    //putting HTML Text box
     var textBox = document.querySelector(".example4");
     textBox.textContent = translation
   })

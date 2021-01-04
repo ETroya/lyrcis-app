@@ -16,7 +16,7 @@ function getLyrics() {
     var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
 	  var artistID = JSON.parse(response).message.body.track_list[0].track.artist_id;
 	  var albumID = JSON.parse(response).message.body.track_list[0].track.album_id;
-	  console.log(JSON.parse(response).message.body.track_list[0].track.album_id);
+	  // console.log(JSON.parse(response).message.body.track_list[0].track.album_id);
 	  
     }
     catch (error) {
@@ -41,7 +41,6 @@ function getLyrics() {
       // putting text in HTML
       var textBox = document.querySelector(".example3");
       textBox.textContent = fullLyrics
-      console.log("Lyrics:", fullLyrics);
       var lyrics = fullLyrics.substring(0,300);
       translate(lyrics);
     })
@@ -59,7 +58,6 @@ function getLyrics() {
       for (var i = 0; i < artists.length; i++) {
         artistNames.push(artists[i].artist.artist_name);
       }
-      console.log("Related artists:", artistNames);
       var textBox = document.querySelector(".example2")
       textBox.textContent=artistNames
 	})
@@ -71,11 +69,10 @@ function getLyrics() {
 		url: songURL,
 		method: "GET"
 	}).then(function(response){
-		console.log("musixMatch",JSON.parse(response))
 		var imageURL = "https://ih1.redbubble.net/image.1304795334.8057/pp,840x830-pad,1000x1000,f8f8f8.jpg";
 		var albumMBID= JSON.parse(response).message.body.album.album_mbid;
 		var albumName = JSON.parse(response).message.body.album.album_name;
-    console.log(albumName)
+    // console.log(albumName)
 		songURL = `https://musicbrainz.org/ws/2/release?query=${albumName}&limit=10&fmt=json`;
 		$.ajax({
 			url: songURL,
@@ -84,28 +81,18 @@ function getLyrics() {
 			// 	Accept: "application/json"
 			// }
 		}).then(function(response){
-      console.log("MARK")
+     
       $.ajax({
         url: `https://musicbrainz.org/ws/2/release/${response.releases[0].id}/front?query=&fmt=json`,
         method: "GET",
       }).then(function(response){     
-        console.log("ALBUM",response)
-        console.log(albumName)
         var textBox= document.querySelector(".example1");
         textBox.textContent =albumName
       })
 
 
-			console.log("musicBrainz",response)
-			// console.log(`https://coverartarchive.org/release/4e304316-386d-3409-af2e-78857eec5cfe.jpg`);
-			console.log(`https://coverartarchive.org/release/${response.releases[0].status-id}.jpg`);
     })
     
-		console.log(albumMBID)
-		// var mbidURL = "https://coverartarchive.org/release/" + albumMBID;
-
-		// document.querySelector("#Bio")
-		// If there is an mbid, then change the image URL
       var textBox =document.querySelector(".example2")
       textBox.textContent= artistNames
     })
