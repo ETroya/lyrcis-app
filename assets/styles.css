@@ -162,3 +162,10 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
+
+/* P-tag for the web-app intro */
+
+p {
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
