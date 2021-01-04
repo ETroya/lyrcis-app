@@ -28,7 +28,6 @@ function translate(lyrics) {
     textBox.textContent = translation
   })
 }
-
 // Gets track ID for song + artist inputted by user and uses that 
 // ID to find lyrics.
 function getLyrics() {
@@ -88,6 +87,7 @@ function getLyrics() {
         artistNames[i] = artists[i].artist.artist_name;
       }
       console.log("Related artists:", artistNames);
+      //putting text in HTML  line 91
       var textBox =document.querySelector(".example2")
       textBox.textContent= artistNames
     })
@@ -114,3 +114,4 @@ $("#searchBtn").on("click", function (event) {
 });
 // Hides everything when yoou click the tabs
 openPage()
+
