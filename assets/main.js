@@ -1,36 +1,3 @@
-// var apiKey = "ccfe673d50e42db6f9e361f10c95b6b0";
-
-// function translate(lyrics) {
-//   var de = "ankushchalla@gmail.com"
-//   var inputLang = $("#search-lang option:selected").text();
-//   if (inputLang === "Italian") {
-//     var lang = "it";
-//   }
-//   else if (inputLang === "Spanish") {
-//     var lang = "es";
-//   }
-//   else if (inputLang === "French") {
-//     var lang = "fr";
-//   }
-//   else if (inputLang === "English") {
-//     var lang = "en"
-//   }
-//   else {
-//     return;
-//   }
-//   var url = `https://api.mymemory.translated.net/get?q=${lyrics}&langpair=en|${lang}&de=${de}`
-//   $.ajax({
-//     url: url, 
-//     method: "GET"
-//   }).then(function(response) {
-//     var translation = response.responseData.translatedText;
-//     console.log("Translation:", translation);
-//     //putting HTML Text box
-//     var textBox = document.querySelector(".example4");
-//     textBox.textContent = translation
-//   })
-// }
-
 // Gets track ID for song + artist inputted by user and uses that 
 // ID to find lyrics.
 function getLyrics() {
@@ -46,7 +13,7 @@ function getLyrics() {
   }).then(function (response) {
     // Call can return an empty error, check for that. 
     try {
-      var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
+    var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
 	  var artistID = JSON.parse(response).message.body.track_list[0].track.artist_id;
 	  var albumID = JSON.parse(response).message.body.track_list[0].track.album_id;
 	  console.log(JSON.parse(response).message.body.track_list[0].track.album_id);
@@ -124,7 +91,8 @@ function getLyrics() {
       }).then(function(response){     
         console.log("ALBUM",response)
         console.log(albumName)
-      
+        var textBox= document.querySelector(".example1");
+        textBox.textContent =albumName
       })
 
 
