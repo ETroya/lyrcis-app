@@ -22,6 +22,7 @@ var settings = {
         "source": "en",
         "q": lyrics,
         "target": lang
+        "content-encoding
     }
 }
 $.ajax(settings).done(function (response) {
