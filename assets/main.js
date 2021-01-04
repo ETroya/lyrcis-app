@@ -13,6 +13,9 @@ function translate(lyrics) {
   else if (inputLang === "French") {
     var lang = "fr";
   }
+  else if (inputLang === "English") {
+	var lang = "eg";
+  }
   else {
     return;
   }
@@ -90,7 +93,9 @@ function getLyrics() {
       for (var i = 0; i < artists.length; i++) {
         artistNames.push(artists[i].artist.artist_name);
       }
-      console.log("Related artists:", artistNames);
+	  console.log("Related artists:", artistNames);
+	  var textBox =document.querySelector(".example2")
+      textBox.textContent= artistNames
 	})
 
 	method = "album.get?";
@@ -133,8 +138,7 @@ function getLyrics() {
 
 		// document.querySelector("#Bio")
 		// If there is an mbid, then change the image URL
-      var textBox =document.querySelector(".example2")
-      textBox.textContent= artistNames
+      
     })
   })
 }
