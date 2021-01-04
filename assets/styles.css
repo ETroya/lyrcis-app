@@ -156,6 +156,9 @@ body {
     border-radius: 25px;
 }
 
-.box example3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* changing the font and center the text inside boxes -CF */
+
+.box {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }

@@ -124,7 +124,9 @@ function getLyrics() {
         method: "GET",
       }).then(function(response){     
         console.log("ALBUM",response)
-        console.log(albumName)
+		console.log(albumName)
+		var textBox = document.querySelector(".example1");
+		textBox.textContent = albumName
       })
 
 
