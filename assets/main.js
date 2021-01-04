@@ -95,6 +95,7 @@ function getLyrics() {
     
       var textBox =document.querySelector(".example2")
       textBox.textContent= artistNames
+            
     })
   })
 }
