@@ -17,5 +17,5 @@ function openPage(pageName, elmnt, color) {
     event.preventDefault();
     getLyrics();
   });
-  // Hides everything when yoou click the tabs
+  // Hides everything when you click the tabs
   openPage()
