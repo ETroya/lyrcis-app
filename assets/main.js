@@ -1,35 +1,35 @@
-var apiKey = "ccfe673d50e42db6f9e361f10c95b6b0";
+// var apiKey = "ccfe673d50e42db6f9e361f10c95b6b0";
 
-function translate(lyrics) {
-  var de = "ankushchalla@gmail.com"
-  var inputLang = $("#search-lang option:selected").text();
-  if (inputLang === "Italian") {
-    var lang = "it";
-  }
-  else if (inputLang === "Spanish") {
-    var lang = "es";
-  }
-  else if (inputLang === "French") {
-    var lang = "fr";
-  }
-  else if (inputLang === "English") {
-    var lang = "en"
-  }
-  else {
-    return;
-  }
-  var url = `https://api.mymemory.translated.net/get?q=${lyrics}&langpair=en|${lang}&de=${de}`
-  $.ajax({
-    url: url, 
-    method: "GET"
-  }).then(function(response) {
-    var translation = response.responseData.translatedText;
-    console.log("Translation:", translation);
-    //putting HTML Text box
-    var textBox = document.querySelector(".example4");
-    textBox.textContent = translation
-  })
-}
+// function translate(lyrics) {
+//   var de = "ankushchalla@gmail.com"
+//   var inputLang = $("#search-lang option:selected").text();
+//   if (inputLang === "Italian") {
+//     var lang = "it";
+//   }
+//   else if (inputLang === "Spanish") {
+//     var lang = "es";
+//   }
+//   else if (inputLang === "French") {
+//     var lang = "fr";
+//   }
+//   else if (inputLang === "English") {
+//     var lang = "en"
+//   }
+//   else {
+//     return;
+//   }
+//   var url = `https://api.mymemory.translated.net/get?q=${lyrics}&langpair=en|${lang}&de=${de}`
+//   $.ajax({
+//     url: url, 
+//     method: "GET"
+//   }).then(function(response) {
+//     var translation = response.responseData.translatedText;
+//     console.log("Translation:", translation);
+//     //putting HTML Text box
+//     var textBox = document.querySelector(".example4");
+//     textBox.textContent = translation
+//   })
+// }
 
 // Gets track ID for song + artist inputted by user and uses that 
 // ID to find lyrics.
@@ -143,24 +143,4 @@ function getLyrics() {
     })
   })
 }
-// When you click on one of these buttons the information will pop out. Album Cover, Related Artist, Lyrics, and Langauage Translator.
 
-function openPage(pageName, elmnt, color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-$("#searchBtn").on("click", function (event) {
-  event.preventDefault();
-  getLyrics();
-});
-// Hides everything when yoou click the tabs
-openPage()
