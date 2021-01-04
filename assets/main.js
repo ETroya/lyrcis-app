@@ -1,63 +1,3 @@
-var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
-
-function translate(lyrics) {
-  // Default translation is Spanish.
-  var inputLang = $("#search-lang option:selected").text();
-  if (inputLang === "Italian") {
-    var lang = "it";
-  } else if (inputLang === "Spanish") {
-    var lang = "es";
-  } else if (inputLang === "French") {
-    var lang = "fr";
-  }
-  var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://google-translate1.p.rapidapi.com/language/translate/v2",
-    "method": "POST",
-    "headers": {
-      "x-rapidapi-host": "google-translate1.p.rapidapi.com",
-      "x-rapidapi-key": "3d49dbd209msh5e2bcaf5544db64p181262jsn89c70bd689e7",
-      "content-type": "application/x-www-form-urlencoded"
-    },
-    "data": {
-      "source": "en",
-      "q": lyrics,
-      "target": lang,
-      "content-encoding": "gzip",
-    }
-  }
-  $.ajax(settings).done(function (response) {
-    console.log(response.data.translations[0]);
-  });
-}
-
-// Using MyMemory API.
-function translate1(lyrics) {
-  var de = "ankushchalla@gmail.com"
-  var inputLang = $("#search-lang option:selected").text();
-  if (inputLang === "Italian") {
-    var lang = "it";
-  }
-  else if (inputLang === "Spanish") {
-    var lang = "es";
-  }
-  else if (inputLang === "French") {
-    var lang = "fr";
-  }
-  else {
-    return;
-  }
-  var url = `https://api.mymemory.translated.net/get?q=${lyrics}&langpair=en|${lang}&de=${de}`
-  $.ajax({
-    url: url,
-    method: "GET"
-  }).then(function (response) {
-    var translation = response.responseData.translatedText;
-    console.log("Translation:", translation);
-  })
-}
-
 // Gets track ID for song + artist inputted by user and uses that 
 // ID to find lyrics.
 function getLyrics() {
@@ -73,8 +13,11 @@ function getLyrics() {
   }).then(function (response) {
     // Call can return an empty error, check for that. 
     try {
-      var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
-      var artistID = JSON.parse(response).message.body.track_list[0].track.artist_id;
+    var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
+	  var artistID = JSON.parse(response).message.body.track_list[0].track.artist_id;
+	  var albumID = JSON.parse(response).message.body.track_list[0].track.album_id;
+	  console.log(JSON.parse(response).message.body.track_list[0].track.album_id);
+	  
     }
     catch (error) {
       if (error instanceof TypeError) {
@@ -105,41 +48,68 @@ function getLyrics() {
     })
 
     // Get related artists using artist ID. 
-    // method = "artist.related.get?";
-    // q = `artist_id=${artistID}`;
-    // songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
-    // $.ajax({
-    //   url: songURL,
-    //   method: "GET"
-    // }).then(function (response) {
-    //   var artists = JSON.parse(response).message.body.artist_list;
-    //   var artistNames = [];
-    //   for (var i = 0; i < artists.length; i++) {
-    //     artistNames[i] = artists[i].artist.artist_name;
-    //   }
-    //   console.log("Related artists:", artistNames);
-    //   var textBox = document.querySelector(".example2")
-    //   textBox.textContent = artistNames
-    // })
+    method = "artist.related.get?";
+    q = `artist_id=${artistID}`;
+    songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
+    $.ajax({
+      url: songURL,
+      method: "GET"
+    }).then(function(response) {
+      var artists = JSON.parse(response).message.body.artist_list;
+      var artistNames = [];
+      for (var i = 0; i < artists.length; i++) {
+        artistNames.push(artists[i].artist.artist_name);
+      }
+      console.log("Related artists:", artistNames);
+      var textBox = document.querySelector(".example2")
+      textBox.textContent=artistNames
+	})
+
+	method = "album.get?";
+    q = `album_id=${albumID}`;
+    songURL = `https://cors-anywhere.herokuapp.com/api.musixmatch.com/ws/1.1/${method}&${q}&apikey=${apiKey}`;
+	$.ajax({
+		url: songURL,
+		method: "GET"
+	}).then(function(response){
+		console.log("musixMatch",JSON.parse(response))
+		var imageURL = "https://ih1.redbubble.net/image.1304795334.8057/pp,840x830-pad,1000x1000,f8f8f8.jpg";
+		var albumMBID= JSON.parse(response).message.body.album.album_mbid;
+		var albumName = JSON.parse(response).message.body.album.album_name;
+    console.log(albumName)
+		songURL = `https://musicbrainz.org/ws/2/release?query=${albumName}&limit=10&fmt=json`;
+		$.ajax({
+			url: songURL,
+			method: "GET",
+			// headers: {
+			// 	Accept: "application/json"
+			// }
+		}).then(function(response){
+      console.log("MARK")
+      $.ajax({
+        url: `https://musicbrainz.org/ws/2/release/${response.releases[0].id}/front?query=&fmt=json`,
+        method: "GET",
+      }).then(function(response){     
+        console.log("ALBUM",response)
+        console.log(albumName)
+        var textBox= document.querySelector(".example1");
+        textBox.textContent =albumName
+      })
+
+
+			console.log("musicBrainz",response)
+			// console.log(`https://coverartarchive.org/release/4e304316-386d-3409-af2e-78857eec5cfe.jpg`);
+			console.log(`https://coverartarchive.org/release/${response.releases[0].status-id}.jpg`);
+    })
+    
+		console.log(albumMBID)
+		// var mbidURL = "https://coverartarchive.org/release/" + albumMBID;
+
+		// document.querySelector("#Bio")
+		// If there is an mbid, then change the image URL
+      var textBox =document.querySelector(".example2")
+      textBox.textContent= artistNames
+    })
   })
 }
 
-// When you click on one of these buttons the information will pop out. Album Cover, Related Artist, Lyrics, and Langauage Translator.
-function openPage(pageName, elmnt, color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  // document.getElementById(pageName).style.display = "block";
-  // elmnt.style.backgroundColor = color;
-}
-
-$("#searchBtn").on("click", function (event) {
-  event.preventDefault();
-  getLyrics();
-});
