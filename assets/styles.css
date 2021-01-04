@@ -15,7 +15,6 @@ html {
     border: 2px solid #B58B79;
 }
 
-
 /* Fancy Shadow on our text */
 
 #header {
@@ -62,7 +61,7 @@ html {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
-/* <<<<<<< HEAD */
+
     }
     #searchBtn{
         background-color: #D56244; /* Red */
@@ -84,10 +83,7 @@ html {
       .checked {
         color: orange;
       }
-/* <<<<<<< HEAD */
-
-      
-/* ======= */
+ 
       #columnEl {
         background-color: red;
         padding: 25px;
@@ -119,5 +115,8 @@ html {
     background-color: #e4846c;
     transition: all .7s ease-in-out;
 }
-/* >>>>>>> a69665bf65a0013c7f48da7efa59435abc9329b6 */
+
+/* #tabs {
+    
+} */
 
