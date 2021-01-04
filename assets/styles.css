@@ -155,3 +155,17 @@ body {
     padding: 25px;
     border-radius: 25px;
 }
+
+/* changing the font and center the text inside boxes - CF */
+
+.box {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* P-tag for the web-app intro - CF */
+
+p {
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}

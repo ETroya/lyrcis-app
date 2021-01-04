@@ -106,8 +106,7 @@ function getLyrics() {
 
 		// document.querySelector("#Bio")
 		// If there is an mbid, then change the image URL
-      var textBox =document.querySelector(".example2")
-      textBox.textContent= artistNames
+      
     })
   })
 }
