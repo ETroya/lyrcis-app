@@ -17,6 +17,7 @@ function getLyrics() {
     try {
       var trackID = JSON.parse(response).message.body.track_list[0].track.track_id;
       var artistID = JSON.parse(response).message.body.track_list[0].track.artist_id;
+      var albumID =JSON.parse(response).message.body.track_list[0].track.album.id;
     }
     catch (error) {
       if (error instanceof TypeError) {
