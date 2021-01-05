@@ -23,7 +23,7 @@ Features:
 
 [Deployed](https://versetile.netlify.app/)
 
-![Main Repo link](https://github.com/ETroya/lyrcis-app)
+[Main Repo link](https://github.com/ETroya/lyrcis-app)
 
 ==========
 Created as equals, by:
