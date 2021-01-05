@@ -186,8 +186,8 @@ p {
     animation: gradient 12s ease infinite;
 }
 .dotBig {
-    height: 75px;
-    width: 75px;
+    height: 85px;
+    width: 85px;
     box-shadow: 0 0 10px 0 #317e96 inset, 0 0 10px 4px #317e96;
     border-radius: 50%;
     display: inline-block;
