@@ -1,14 +1,14 @@
-var lyrics = "Remember those walls I built. Well, baby, they're tumbling down. And they didn't even put up a fight. They didn't even make a sound";
-
-function translate() {
+function translate(lyrics) {
     var inputLang = $("#search-lang option:selected").text();
-    console.log(inputLang);
     if (inputLang === "Italian") {
         var lang = "it";
     } else if (inputLang === "Spanish") {
         var lang = "es";
     } else if (inputLang === "French") {
         var lang = "fr";
+    }
+    else {
+        return;
     }
     var settings = {
         "async": true,
@@ -28,10 +28,11 @@ function translate() {
         }
     }
 
-    $.ajax(settings).done(function (response) {
-        console.log(response.data.translations[0].translatedText);
+    $.ajax(settings).then(function (response) {
+        var translated = response.data.translations[0].translatedText;
+        $(".example4").text(translated);
+        console.log(translated);
     });
 }
 
-
-$("#searchBtn").click(translate);
+export { translate };
