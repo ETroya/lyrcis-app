@@ -30,8 +30,9 @@
       </div>
       <p>VersEtile is a free web app developed to search any song and translate it to your preferred language.</p>
 
-      <input type="text" class="form-control fa-music" id="search-song" aria-label="Search" placeholder="Song Name">
-      <input type="text" class="form-control fa-music" id="search-artist" aria-label="Search" placeholder="Artist Name">
+
+      <input type="text" class="form-control" id="search-song" aria-label="Search" placeholder="Song Name">
+      <input type="text" class="form-control" id="search-artist" aria-label="Search" placeholder="Artist Name">
       <select class="form-select" id="search-lang" aria-label="Default select example">
         <option selected value="0">No Translation (Default)</option>
         <option value="1">Italian</option>
@@ -41,7 +42,7 @@
       </select>
       <div class="box-2">
         <div class="btn btn-two">
-          <button id="searchBtn" class="button is-large is-rounded ">Search</button>
+          <button id="searchBtn" class="button is-large is-rounded">Search</button>
         </div>
       </div>
       <!-- Header -->
@@ -54,114 +55,32 @@
             <div class="tabs is-toggle is-toggle-rounded is-fullwidth">
               <ul>
                 <li>
-                  <a class="tablink" onclick="openPage('albumCover', this, 'lightgreen')">
+                  <a class="tablink" onclick="openPage('albumName', this, 'gray')">
                     <span id="selectStart" class="icon is-large"><i class="fa fa-camera"></i></span>
                     <span>Album Name</span>
                   </a>
                 </li>
 
                 <li>
-                  <a class="tablink" onclick="openPage('RelatedArtist', this, 'lightgreen')">
+                  <a class="tablink" onclick="openPage('RelatedArtist', this, 'gray')">
                     <span id="select" class="icon is-large"><i class="fa fa-tree"></i></span>
                     <span>Related Artists</span>
                   </a>
                 </li>
                 <li>
-                  <a id="lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'lightgreen')">
+                  <a id="lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'gray')">
                     <span id="select" class="icon is-large"><i class="fa fa-music"></i></span>
                     <span>Lyrics</span>
                   </a>
                 </li>
                 <li>
-                  <a class="tablink" onclick="openPage('langTrans', this, 'lightgreen')">
+                  <a class="tablink" onclick="openPage('langTrans', this, 'gray')">
                     <span id="selectEnd" class="icon is-large"><i class="fa fa-edit"></i></span>
                     <span>Language Translator</span>
                   </a>
                 </li>
               </ul>
             </div>
-            </div>
-            </div>
-
-
-            <!-- Header -->
-            <main></main>
-            <!-- Selection of the Album Cover, Bio, Lyrics, Translator-->
-            <p class="subtitle">
-
-                <body>
-                    <section class="section">
-                        <div class="tabs is-toggle is-toggle-rounded is-fullwidth">
-                            <ul>
-                                <li>
-                                    <a class="tablink" onclick="openPage('albumCover', this, 'red')">
-                                        <span id="selectStart" class="icon is-large"><i class="fa fa-camera" ></i></span>
-                                        <span>Album Cover</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="tablink" onclick="openPage('RelatedArtist', this, 'green')">
-                                        <span id="select" class="icon is-large"><i class="fa fa-tree"></i></span>
-                                        <span>Related Artists</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'blue')">
-                                        <span id="select" class="icon is-large"><i class="fa fa-music"></i></span>
-                                        <span>Lyrics</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="tablink" onclick="openPage('langTrans', this, 'orange')">
-                                        <span id="selectEnd" class="icon is-large"><i class="fa fa-edit"></i></span>
-                                        <span>Language Translator</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <body>
-                            <div class="container">
-                                <h2 class="subtitle">
-
-                                    <!--switching boxes  -->
-                                    <div id="albumCover" class="tabcontent">
-                                        <div class="column">
-                                            <a class="box example1">
-                                                <p class="title is-2">Another title</p>
-                                                <p class="subtitle is-4 is-marginless">another subtitle</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div id="RelatedArtist" class="tabcontent">
-                                        <div class="container">
-                                            <div class="columns"></div>
-                                            <div class="column">
-                                                <a class="box example2"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="Lyrics" class="tabcontent">
-                                        <div class="container">
-                                            <!-- <div class="columns"> -->
-                                            <div class="column">
-                                                <p class="box example3"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div id="langTrans" class="tabcontent">
-                                <div class=" container">
-                                    <!-- <div class="columns"> -->
-                                    <div class="column">
-                                        <a class="box example4"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
 
             <body>
               <div class="container">
@@ -201,7 +120,6 @@
                 </div>
               </div>
               </div>
-
           </section>
           <p class="team">Made by the VersEtile Team</p>
           <span class="dot2"></span>  
