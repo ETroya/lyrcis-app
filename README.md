@@ -43,3 +43,4 @@ The purpose of this app would be that the user would be able to search their fav
 
 ![Alt MainPage](./assets/images/Mainpage.PNG)
 =========================
+
