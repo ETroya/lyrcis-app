@@ -12,7 +12,7 @@ body {
 
 #mainbox {
     opacity: 0.92;
-    background-color: #617e83;
+	background: linear-gradient(-15deg, #133c49, #29aad1);
     padding: 10px 25px;
     border-top-left-radius: 80px ;
     border-top-right-radius: -10px ;
