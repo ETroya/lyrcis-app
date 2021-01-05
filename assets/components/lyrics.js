@@ -1,4 +1,4 @@
-import { translate } from "./trans2.js";
+import { translate } from "./translate.js";
 
 
 function getLyrics(trackID, apiKey) {
