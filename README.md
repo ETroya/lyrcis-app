@@ -7,15 +7,17 @@ Features:
 
 =========
 
-• An API that properly lists music lyrics live.
+• An API that properly lists music lyrics.
 
-• A handy translator that cab translate the Lyrics into several languages, including pirate.
+• A handy translator that cab translate the Lyrics into several languages.
 
-• Lists the bio of the band itself.
+• Showcases similar bands.
 
 • Review and comment on the tracks
 
-• Showcases the album cover 
+• tells the user what album the song belongs to.
+
+• A very cyberpunky UI. (Wake up samurai, we have a game to patch.)
 
 
 =====
