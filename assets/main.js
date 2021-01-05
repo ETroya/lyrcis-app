@@ -1,4 +1,4 @@
-var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
+var apiKey = "9a1da9b45c2f0b030d13d1df98e5b710";
 
 function translate(lyrics) {
   var inputLang = $("#search-lang option:selected").text();
