@@ -11,14 +11,21 @@ body {
 /* The tan box that this is going to take up */
 
 #mainbox {
-    opacity: 0.96;
+    opacity: 0.92;
     background-color: #617e83;
     padding: 10px 25px;
-    border-radius: 25px;
-    border: 2px solid linear-gradient(#1a5263, #317e96, #317e96, #63301a);;
+    border-top-left-radius: 80px ;
+    border-top-right-radius: -10px ;
+    border-bottom-right-radius: 80px ;
+    border-bottom-left-radius: 10px ;
+    border: 2px solid #1a5263;
 }
 
-/* Verse E Tile Logo */
+#infoBox{
+    background-color: teal;
+}
+
+/* VersEtile Logo */
 
 #VersEtile {
     opacity: 0.2;
@@ -29,7 +36,6 @@ body {
 }
 
 img {
-    opacity: 0.87;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +59,13 @@ p {
     padding-top: 18px;
 }
 
+.copy {
+    font-size: 14px;
+
+}
+.team {
+    font-size: 12px;
+}
 
 /* Input tags */
 
@@ -79,13 +92,16 @@ p {
 
 .form-select {
     border-radius: 10px;
-    background-color: #F2EAF9;
+    background-color: #dfdfdf;
     border: 2px solid rgb(121, 173, 173);
     float: left;
     width: 50%;
+    padding-top: ;
+    padding-left: 15%;
     text-align: center;
     font-weight: bold;
     margin-right: 20px;
+    margin-left: 120px;
 }
 
 /* Fancy form */
@@ -173,7 +189,7 @@ p {
 
 /* Animated Background */
 html {
-	background: linear-gradient(-45deg, #1a5263, #317e96, #ca3d2a, #63301a);
+	background: linear-gradient(-45deg, #1a414d, #317e96, #c53636, #63301a);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
