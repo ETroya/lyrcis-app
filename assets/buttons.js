@@ -18,4 +18,5 @@ function openPage(pageName, elmnt, color) {
   }
   
   // Hides everything when yoou click the tabs
+  
   openPage();
