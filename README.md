@@ -20,9 +20,9 @@ Features:
 
 =====
 
-![Screenshot]()
+![Screenshot](![Alt MainPage](./assets/images/Mainpage.PNG))
 
-[Deployed]()
+[Deployed](https://versetile.netlify.app/)
 
 ![Main Repo link](https://github.com/ETroya/lyrcis-app)
 
