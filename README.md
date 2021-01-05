@@ -19,7 +19,7 @@ Features:
 
 
 =====
-![Screenshot](./assets/images/Mainpage.PNG)
+![Screenshot](./assets/images/screenshot.PNG)
 
 [Deployed](https://versetile.netlify.app/)
 
