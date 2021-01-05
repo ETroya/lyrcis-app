@@ -19,8 +19,7 @@ Features:
 
 
 =====
-
-![Screenshot](![Alt MainPage](./assets/images/Mainpage.PNG))
+![Alt MainPage](./assets/images/Mainpage.PNG)
 
 [Deployed](https://versetile.netlify.app/)
 
@@ -41,6 +40,5 @@ Ty Diezhandino
 
 The purpose of this app would be that the user would be able to search their favorite song lyrics by their favorite artist. The bonus feature of this app is that they can translate the lyrics to a different language. If you look at other lyric websites you'll see that they are missing translations. This would also benefit the artist with exposure to their music. 
 
-![Alt MainPage](./assets/images/Mainpage.PNG)
 =========================
 
