@@ -1,12 +1,60 @@
-/* Back-Background, includes section to prevent the awkward white box. */
 
-html {
-    background-color: #413733;
-}
+/* Set body as invisible.
+
+
+Prevents the annoying box of doom. */
 
 body {
-    background-color: #413733;
+    background-color: transparent
 }
+
+/* The tan box that this is going to take up */
+
+#mainbox {
+    opacity: 0.96;
+    background-color: #617e83;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid linear-gradient(#1a5263, #317e96, #317e96, #63301a);;
+}
+
+/* Verse E Tile Logo */
+
+#VersEtile {
+    opacity: 0.2;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+img {
+    opacity: 0.87;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Text Formatting */
+
+/* changing the font and center the text inside boxes - CF */
+
+.box {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* P-tag for the web-app intro - CF */
+
+p {
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 18px;
+}
+
+
+/* Input tags */
 
 .form-label {
     font-weight: bold;
@@ -17,10 +65,12 @@ body {
     font-weight: bold;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    background-color: #f8f8f7;
-    border: 2px solid #B58B79;
+    background-image: linear-gradient(#ffffff, #dfdfdf);
+    border: 2px solid rgb(121, 173, 173);
     border-radius: 2px;
     padding-top: 2px;
+    padding-left: auto;
+    padding-right: auto;
     float: left;
     width: 50%;
     height: 35px;
@@ -28,9 +78,9 @@ body {
 }
 
 .form-select {
-    border-radius: 2px;
-    background-color: #f8f8f7;
-    border: 2px solid #B58B79;
+    border-radius: 10px;
+    background-color: #F2EAF9;
+    border: 2px solid rgb(121, 173, 173);
     float: left;
     width: 50%;
     text-align: center;
@@ -38,33 +88,10 @@ body {
     margin-right: 20px;
 }
 
-
-/* The tan box that this is going to take up */
-
-#mainbox {
-    background-image: linear-gradient(#C8B190, #B58B79);
-    background-color: #C8B190;
-    padding: 10px 25px;
-    border-radius: 25px;
-    border: 2px solid #B58B79;
-}
-
-
 /* Fancy form */
 
-.selectStart {
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-}
-
-.select {
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-}
-
-.selectEnd {
+.selectStart, .select, .selectEnd {
+    opacity: 1;
     font-weight: bold;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
@@ -92,8 +119,8 @@ body {
     font-weight: bold;
     font-size: 24px;
     color: #413733;
-    background-color: #C8B190;
-    border: 2px solid #B58B79;
+    background-color: #b4dbc1;
+    border: 2px dotted #6dc76a;
     padding: 2%;
 }
 
@@ -113,7 +140,7 @@ body {
 
 .input {
     text-align: left;
-    background: #F8F8F7;
+    background: #ffffff;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px solid #B58B79;
@@ -124,7 +151,7 @@ body {
 
 #searchBtn {
     margin-left: 18px;
-    background-color: #D56244;
+    background-color: #be1717;
     /* Red */
     border: none;
     color: #F8F8F7;
@@ -144,28 +171,25 @@ body {
 }
 
 
-/* Whatever this is. */
-
-.checked {
-    color: orange;
+/* Animated Background */
+html {
+	background: linear-gradient(-45deg, #1a5263, #317e96, #ca3d2a, #63301a);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
-#columnEl {
-    background-color: red;
-    padding: 25px;
-    border-radius: 25px;
+body{
+    background-color: transparent;
 }
 
-/* changing the font and center the text inside boxes - CF */
-
-.box {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-}
-
-/* P-tag for the web-app intro - CF */
-
-p {
-    font-family: 'Do Hyeon', sans-serif;
-    text-align: center;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
