@@ -1,5 +1,3 @@
-var apiKey = "9a1da9b45c2f0b030d13d1df98e5b710"
-
 import { lyricsMachine } from "./lyrics_machine.js";
 
 function main() {
