@@ -21,16 +21,18 @@ body {
 /* Verse E Tile Logo */
 
 #VersEtile {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    opacity: 0.2;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+    height: auto;
 }
 
 img {
     opacity: 0.87;
-    width: auto;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Text Formatting */
 
