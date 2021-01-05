@@ -10,12 +10,13 @@ function openPage(pageName, elmnt, color) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
+    
+    if (!(pageName === undefined)) {
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
   }
-  $("#searchBtn").on("click", function (event) {
-    event.preventDefault();
-    getLyrics();
-  });
-  // Hides everything when you click the tabs
-  openPage()
+  
+  // Hides everything when yoou click the tabs
+  
+  openPage();

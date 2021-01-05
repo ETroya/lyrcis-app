@@ -34,8 +34,6 @@ Ankush Challa
 Edwin Troya
 Syrus Sadvandi
 Carlos Fuerte
-Syrus Sadvandi
-Carlos Fuente
 Amar Mann 
 Ty Diezhandino
 
