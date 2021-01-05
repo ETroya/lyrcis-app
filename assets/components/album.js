@@ -11,6 +11,7 @@ function getAlbumName(albumID, apiKey) {
         console.log("album name", albumName);
         var textBox = document.querySelector(".example1");
         textBox.textContent = albumName;
+        
     });
 }
 
