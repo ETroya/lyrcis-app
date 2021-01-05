@@ -43,8 +43,7 @@ function main() {
       var textBox = document.querySelector(".example2")
       textBox.textContent = artistNames
     })
-    
   }
-
+    
 main();
   

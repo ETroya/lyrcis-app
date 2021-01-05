@@ -2,7 +2,7 @@ import { getLyrics} from "./components/lyrics.js";
 import { getRelated } from "./components/related_artists.js";
 import { getAlbumName } from "./components/album.js";
 
-var apiKey = "5fdfd8b8b33408cad71de26acf2b6c9f";
+var apiKey = "9a1da9b45c2f0b030d13d1df98e5b710";
 
 function lyricsMachine() {
     var songName = $("#search-song").val();
