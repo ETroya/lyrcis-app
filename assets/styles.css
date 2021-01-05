@@ -71,12 +71,25 @@ p {
 
 .form-label {
     font-weight: bold;
-    padding-top: 3px;
+    margin: auto;
+    padding-top: 18px;
+    padding-bottom: 10px;
 }
+
+.copy {
+    font-size: 14px;
+
+}
+.team {
+    font-size: 12px;
+}
+
+/* Input tags */
 
 .form-control {
     font-weight: bold;
     font-size: 20px;
+    color: whitesmoke;
     font-family: 'Lato', sans-serif;
     background-image: linear-gradient(#504f4f, #3d3d3d);
     border: 2px solid rgb(38, 43, 43);
@@ -138,9 +151,9 @@ p {
 .box {
     font-weight: bold;
     font-size: 24px;
-    color: #413733;
-    background-color: #b4dbc1;
-    border: 2px dotted #6dc76a;
+    color: whitesmoke;
+    background-image: linear-gradient(#504f4f, #303030);
+    border: 2px dotted #184d80;
     padding: 2%;
 }
 
@@ -188,14 +201,19 @@ p {
 
 /* Search btn */
 #searchBtn {
-    color: black;
+    margin-left: 18px;
+    margin-right: 15px;
+    background-color: #c53636;
+    /* Red */
+    font-family: 'IBM Plex Sans', sans-serif;
+    border: none;
+    color: #F8F8F7;
     /* White text */
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    font-weight: bolder;
     border-top-left-radius: 15px ;
     border-top-right-radius: 3px ;
     border-bottom-right-radius: 8px ;
@@ -222,6 +240,15 @@ html {
 
 #mainbox {
     background-image: ;
+}
+
+/* Animated BUTTN */
+
+/* Animated Background */
+html {
+	background: linear-gradient(-45deg, #1a414d, #317e96, #c53636, #63301a);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
 }
 
 body{
