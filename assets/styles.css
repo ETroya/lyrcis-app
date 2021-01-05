@@ -17,8 +17,11 @@ body {
     border-top-right-radius: -10px ;
     border-bottom-right-radius: 80px ;
     border-bottom-left-radius: 10px ;
-    border: 2px solid #1a5263;
-    box-shadow: 0 0 2px 0 #1a5263 inset, 0 0 50px 4px #1d2a2e;
+    border: 2px solid #446068;
+	background: linear-gradient(-45deg, #446068, #408499, #cc5a5a, #5f3f31);
+	background-size: 800% 800%;
+	animation: gradient 12s ease infinite;
+    box-shadow: 0 0 2px 0 #556266 inset, 0 0 50px 4px #1d2a2e;
 }
 
 #infoBox{
@@ -37,8 +40,8 @@ body {
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 19%;
+    margin-right: 25%;
 }
 /* Text Formatting */
 
@@ -54,6 +57,7 @@ img {
 p {
     font-family: 'Do Hyeon', sans-serif;
     text-align: center;
+    font-size: 15px;
     font-weight: bold;
     margin: auto;
     padding-top: 18px;
@@ -108,7 +112,7 @@ p {
 .form-select {
     border-radius: 10px;
     background-color: #494848;
-    border: 2px dotted rgb(38, 43, 43);
+    border: 2px solid rgb(38, 43, 43);
     float: left;
     width: 50%;
     padding-top: ;
@@ -164,6 +168,9 @@ p {
     border-radius: 50%;
     display: inline-block;
     float: right;
+    background: linear-gradient(-45deg, #1a414d, #317e96, #c53636, #63301a);
+	background-size: 800% 800%;
+	animation: gradient 12s ease infinite;
   }
 .dot2 {
     height: 25px;
@@ -174,6 +181,22 @@ p {
     float: left;
     margin: 5px;
     margin-bottom: 5px;
+    background: linear-gradient(-45deg, #1a414d, #317e96, #c53636, #63301a);
+	background-size: 800% 800%;
+    animation: gradient 12s ease infinite;
+}
+.dotBig {
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 0 10px 0 #317e96 inset, 0 0 10px 4px #317e96;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin: 2px;
+    margin-bottom: 5px;
+    background: linear-gradient(-45deg, #1a414d, #317e96, #c53636, #63301a);
+	background-size: 900% 900%;
+	animation: gradient 12s ease infinite;
   }
 
 .column {
@@ -238,11 +261,6 @@ html {
 	animation: gradient 15s ease infinite;
 }
 
-#mainbox {
-    background-image: ;
-}
-
-/* Animated BUTTN */
 
 /* Animated Background */
 html {
