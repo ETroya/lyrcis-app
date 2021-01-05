@@ -1,5 +1,3 @@
-//var lyrics = "Remember those walls I built. Well, baby, they're tumbling down. And they didn't even put up a fight. They didn't even make a sound";
-
 function translate(lyrics) {
     var inputLang = $("#search-lang option:selected").text();
     if (inputLang === "Italian") {
@@ -36,8 +34,5 @@ function translate(lyrics) {
         console.log(translated);
     });
 }
-
-
-// $("#searchBtn").click(translate);
 
 export { translate };
