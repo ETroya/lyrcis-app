@@ -34,6 +34,36 @@
 
             <button id="searchBtn" class="button is-large is-rounded">Search</button>
 
+        <body>
+          <section class="section">
+            <div class="tabs is-toggle is-toggle-rounded is-fullwidth">
+              <ul>
+                <li>
+                  <a class="tablink" onclick="openPage('albumCover', this, 'lightgreen')">
+                    <span id="selectStart" class="icon is-large"><i class="fa fa-camera"></i></span>
+                    <span>Album Name</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="tablink" onclick="openPage('RelatedArtist', this, 'lightgreen')">
+                    <span id="select" class="icon is-large"><i class="fa fa-tree"></i></span>
+                    <span>Related Artists</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'lightgreen')">
+                    <span id="select" class="icon is-large"><i class="fa fa-music"></i></span>
+                    <span>Lyrics</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="tablink" onclick="openPage('langTrans', this, 'lightgreen')">
+                    <span id="selectEnd" class="icon is-large"><i class="fa fa-edit"></i></span>
+                    <span>Language Translator</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             </div>
             </div>
