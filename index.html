@@ -26,7 +26,11 @@
   <!-- Main body for content -->
   <section class="section">
     <main class="container" id="mainbox">
-      <h1 id="header" class="title has-text-centered">VersEtile</h1>
+      <div class="VersEtile">
+        <img src="assets/images/verse.png" alt="VerEtile">
+        <img src="assets/images/e.png" alt="VerEtile">
+        <img src="assets/images/tile.png" alt="VerEtile">
+      </div>
       <p>VersEtile is a free web app developed to search any song and translate it to your preferred language. -
         VersEtile Team</p>
       <input type="text" class="form-control" id="search-song" aria-label="Search" placeholder="Song Name">
@@ -56,26 +60,26 @@
             <div class="tabs is-toggle is-toggle-rounded is-fullwidth">
               <ul>
                 <li>
-                  <a class="tablink" onclick="openPage('albumCover', this, 'red')">
+                  <a class="tablink" onclick="openPage('albumCover', this, 'lightgreen')">
                     <span id="selectStart" class="icon is-large"><i class="fa fa-camera"></i></span>
-                    <span>Album Cover</span>
+                    <span>Album Name</span>
                   </a>
                 </li>
 
                 <li>
-                  <a class="tablink" onclick="openPage('RelatedArtist', this, 'green')">
+                  <a class="tablink" onclick="openPage('RelatedArtist', this, 'lightgreen')">
                     <span id="select" class="icon is-large"><i class="fa fa-tree"></i></span>
                     <span>Related Artists</span>
                   </a>
                 </li>
                 <li>
-                  <a id="lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'blue')">
+                  <a id="lyrics-Btn" class="tablink" onclick="openPage('Lyrics', this, 'cyan')">
                     <span id="select" class="icon is-large"><i class="fa fa-music"></i></span>
                     <span>Lyrics</span>
                   </a>
                 </li>
                 <li>
-                  <a class="tablink" onclick="openPage('langTrans', this, 'orange')">
+                  <a class="tablink" onclick="openPage('langTrans', this, 'lightgreen')">
                     <span id="selectEnd" class="icon is-large"><i class="fa fa-edit"></i></span>
                     <span>Language Translator</span>
                   </a>
